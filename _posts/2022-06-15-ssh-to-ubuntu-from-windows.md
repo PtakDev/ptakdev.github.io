@@ -32,3 +32,4 @@ ssh <UBUNTU_USER>@<IP_UBUNTU>
 
 ##### References: 
 [`How to Use SCP Command to Securely Transfer Files`](https://linuxize.com/post/how-to-use-scp-command-to-securely-transfer-files/){:target="_blank"}
+[`SSH exchange keys between Windows 10 and Linux`](https://youtu.be/iHbLatrPF2M){:target="_blank"}
