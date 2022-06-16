@@ -48,7 +48,9 @@ You will find code similar to below.
 ## Step 4. Edit **_config.yml** file.
 
 Scroll down to section `comments` in `_config.yml` and in line `active` type `giscus`.
-Now go to the `repo` line and type `<GH_USERNAME>/<GH_USERNAME>.github.io` and then in `repo_id` paste the value of `data-repo-id` from the prevoius point. In `category` type value of `data-category` from gisgus site and do same for `category_id` but use value of `data-category-id`. 
+Now, under giscus section go to the `repo` line and type `<GH_USERNAME>/<GH_USERNAME>.github.io` and then in `repo_id` paste the value of `data-repo-id` from the prevoius point. In `category` type value of `data-category` from gisgus site and do same for `category_id` but use value of `data-category-id`.
+
+Your settings should look something like that.
 
 ```yaml
 comments:

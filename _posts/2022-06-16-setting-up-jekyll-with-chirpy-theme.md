@@ -1,7 +1,7 @@
 ---
 title: Setting up Jekyll site with Chirpy theme
 date: 2022-06-16 10:00:00 +0100
-categories: [Docs, Jekyll]
+categories: [Docs, Chirpy]
 tags: [jekyll,ubuntu 20.04,chirpy]     # TAG names should always be lowercase
 ---
 

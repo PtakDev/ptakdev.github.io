@@ -1,8 +1,8 @@
 ---
 title: SSH to Ubuntu machine from Windows
 date: 2022-06-15 12:45:00 +0100
-categories: [Docs, Windows, Ubuntu 20.04]
-tags: [Windows,Ubuntu 20.04, ssh, powershell]     # TAG names should always be lowercase
+categories: [Docs, Windows]
+tags: [windows,ubuntu 20.04, ssh, powershell]     # TAG names should always be lowercase
 ---
 
 1.
