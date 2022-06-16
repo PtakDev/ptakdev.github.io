@@ -101,8 +101,8 @@ comments:
   giscus:
     repo: PtakDev/ptakdev.github.io             # <gh-username>/<repo>
     repo_id: R_kgDOHgfm8g
-    category: 
-    category_id:
+    category: Announcements
+    category_id: DIC_kwDOHgfm8s4CPtVr
     mapping:          # optional, default to 'pathname'
     input_position:   # optional, default to 'bottom'
     lang:             # optional, default to the value of `site.lang`

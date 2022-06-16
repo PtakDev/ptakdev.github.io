@@ -20,6 +20,8 @@ In the `Configuration` section, choose the website repo that giscus will connect
 ![Repo meets criteria](https://drive.google.com/uc?export=view&id=1FUjNEPxMLtWGZS87k6FRtiHL0rwtG30k){: width="500" height="220" }
 _When all criteria are meet, you will see above notification._
 
+We also have to change `Discussion Category`. I have used recommended `Announcments` category.
+
 You can leave the rest of the options as `Default`.
 
 ## Step 3. Find section Enable giscus, on the site.
@@ -30,8 +32,8 @@ You will find code similar to below.
 <script src="https://giscus.app/client.js"
         data-repo="<GH_USERNAME>/<GH_USERNAME>.github.io"
         data-repo-id="<REPO_ID>"
-        data-category="[ENTER CATEGORY NAME HERE]"
-        data-category-id="[ENTER CATEGORY ID HERE]"
+        data-category="Announcements"
+        data-category-id="<ID_CATEGORY>"
         data-mapping="pathname"
         data-reactions-enabled="1"
         data-emit-metadata="0"
@@ -46,7 +48,7 @@ You will find code similar to below.
 ## Step 4. Edit **_config.yml** file.
 
 Scroll down to section `comments` in `_config.yml` and in line `active` type `giscus`.
-Now go to the `repo` line and type `<GH_USERNAME>/<GH_USERNAME>.github.io` and then in `repo_id` paste the value of `data-repo-id` from the prevoius point. 
+Now go to the `repo` line and type `<GH_USERNAME>/<GH_USERNAME>.github.io` and then in `repo_id` paste the value of `data-repo-id` from the prevoius point. In `category` type value of `data-category` from gisgus site and do same for `category_id` but use value of `data-category-id`. 
 
 ```yaml
 comments:
@@ -60,8 +62,8 @@ comments:
   giscus:
     repo: <GH_USERNAME>/<GH_USERNAME>.github.io 
     repo_id: <REPO_ID>
-    category: 
-    category_id:
+    category: Announcements
+    category_id: <ID_CATEGORY>
     mapping:          # optional, default to 'pathname'
     input_position:   # optional, default to 'bottom'
     lang:             # optional, default to the value of `site.lang`
