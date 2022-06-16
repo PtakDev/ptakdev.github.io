@@ -26,7 +26,7 @@ Create new repository from the [Chirpy Starter](https://github.com/cotes2020/chi
 git clone git@github.com:<GH_USERNAME>/<GH_USERNAME>.github.io.git
 ```
 
-#### Step 3. Installing Dependencies
+#### Step 3. Install Dependencies
 Before running for the first time, go to the root directory of your site, and install dependencies as follows:
 ```shell
 bundle
@@ -35,7 +35,7 @@ bundle
 >To install Bundler, I had to edit a `/etc/gai.conf`{: .filepath} file as I had some probles with IPv6 setup. I added `precedence  2a04:4e42::0/32  5` to it. You can read more in [this](https://stackoverflow.com/questions/49800432/gem-cannot-access-rubygems-org){:target="_blank"} Stackoverflow post.
 {: .prompt-warning }
 
-#### Step 4. Running Local Server
+#### Step 4. Run site local
 Run the following command in the root directory of the site:
 ```shell
 bundle exec jekyll s
@@ -43,9 +43,35 @@ bundle exec jekyll s
 >I had to install ruby-dev package in order to meke everything work.
 {: .prompt-warning }
 
-# Create your first post
+# Creating your first post
 
-### Step 1. Create markdown file
+### Step 1. Edit _config.yml file.
+Locate the `_config.yml` file and open it. We need to change few settings.
+
+```yaml
+# Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
+timezone: Europe/Madrid
+
+title: Site Title                       # the main title
+
+tagline: Site Sub-Title                 # it will display as the sub-title
+
+description: >-                         # used by seo meta and the atom feed
+  Website description.
+
+# fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
+url: 'https://<GH_USERNAME>.github.io'
+
+github:
+  username: <GH_USERNAME>               # change to your github username
+
+twitter:
+  username: <TW_USERNAME>               # change to your twitter username
+```
+> These are just some of the basic settings examples. You adjust the options accoringly to your needs. 
+{: .prompt-tip   }
+
+### Step 2. Create markdown file
 In VS Code, locate a floder `_post`{: .filepath} and create new `.md` file. 
 You can copy and paste below for tests.
 
@@ -61,11 +87,11 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vestibulum 
 
 ```
 
-### Step 2. Save the file and refresh your website.
+### Step 3. Save the file and refresh your website.
 
 You should be able to see your post on the home page. 
 
-# Host the site on GiHub
+# Hosting the site on GiHub
 
 ### Step 1. Make sure your repo is public on GitHub. 
 ### Step 2. Commit yout code to GitHub. 
