@@ -109,7 +109,7 @@ Go to the setting of your repository and on the left site panel choose `Pages`. 
 
 ### Step 4. Go to your website!
 
-##### References: 
+##### References 
 
 [`Chirpy`](https://github.com/cotes2020/jekyll-theme-chirpy){:target="_blank"}
 [`Bundler`](https://bundler.io/){:target="_blank"}

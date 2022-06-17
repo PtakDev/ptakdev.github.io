@@ -120,6 +120,6 @@ Aadding `{:target="_blank"}` after the link, opens it in new tab after cliking i
 
 
 
-## References:
+## References
 [`Chirpy Demo`](https://chirpy.cotes.page/){:target="_blank"}
 [`Language Support for code blocks`](https://rdmd.readme.io/docs/code-blocks){:target="_blank"}

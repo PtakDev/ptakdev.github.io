@@ -2,7 +2,7 @@
 title: Running Jenkins in Docker with Docker Compose
 date: 2022-06-17 10:30:00 +0100
 categories: [Docs, Jenkins]
-tags: [jenkins, docker, docker-compose, ubuntu 20.04]     # TAG names should always be lowercase
+tags: [jenkins, docker, docker-compose, ubuntu 20.04, ssh ]     # TAG names should always be lowercase
 ---
 
 > I recomend to read the full guide published on CloudBees blog [How to Install and Run Jenkins With Docker Compose](https://www.cloudbees.com/blog/how-to-install-and-run-jenkins-with-docker-compose){:target="_blank"}
@@ -179,7 +179,7 @@ To verify if the Agent is successfully connected and online go to Log and look f
 > It's highly advisable to **not** run any builds on the built-in node, instead using `agents` to run builds. To prevent builds from running on the built-in node directly, navigate to `Manage Jenkins` &rarr; `Manage Nodes and Clouds`. Select `Built-In Node` in the list, then select `Configure` in the menu. Set the `number of executors` to `0` and save. You can read more about it [`here`](https://www.jenkins.io/doc/book/security/controller-isolation/){:target="_blank"}
 {: .prompt-info }
 
-## Reference:
+## References
 
 [`How to Install and Run Jenkins With Docker Compose`](https://www.cloudbees.com/blog/how-to-install-and-run-jenkins-with-docker-compose){:target="_blank"}
 [`Jenkins Docker image`](https://hub.docker.com/r/jenkins/jenkins/){:target="_blank"}
