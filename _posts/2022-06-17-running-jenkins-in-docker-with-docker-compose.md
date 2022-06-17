@@ -157,27 +157,27 @@ Make sure you are in the directory that contains right `docker-compose.yaml` fil
 
 ### Define new Jenkins agent
 
-###### Step 1. In our Jenkins Dashboard, we need to navigate to `Manage Jenkins`  &rarr; `Manage Nodes and Clouds` and click `New Node`.
-###### Step 2. Give your agent a `name` and set the Remote `root directory` to `/home/jenkins/agent`.
-###### Step 3. In the next part of the form under `Usage`, select `Use this node as much as possible`.
-###### Step 4. Under `Launch method`, select `Launch agents via SSH`.
-###### Step 5. For `Host`, enter `agent`.
-###### Step 6. Under `Credentials`, select the one created earlier.
-###### Step 7. Under `Host Key Verification Strategy`, select `Non verifying Verification Strategy`.
-###### Step 8. Click `Advanced` on the right.
-###### Step 9. Set the `JavaPath` to `/opt/java/openjdk/bin/java`.
-###### Step 10. Click `Save`.
+###### 1. In our Jenkins Dashboard, we need to navigate to `Manage Jenkins`  &rarr; `Manage Nodes and Clouds` and click `New Node`.
+###### 2. Give your agent a `name` and set the Remote `root directory` to `/home/jenkins/agent`.
+###### 3. In the next part of the form under `Usage`, select `Use this node as much as possible`.
+###### 4. Under `Launch method`, select `Launch agents via SSH`.
+###### 5. For `Host`, enter `agent`.
+###### 6. Under `Credentials`, select the one created earlier.
+###### 7. Under `Host Key Verification Strategy`, select `Non verifying Verification Strategy`.
+###### 8. Click `Advanced` on the right.
+###### 9. Set the `JavaPath` to `/opt/java/openjdk/bin/java`.
+###### 10. Click `Save`.
 
 To verify if the Agent is successfully connected and online go to Log and look for output `Agent successfully connected and online`.
 
-> I came across an Error `Agent JVM has terminated. Exit code=127 docker` while trying to run the agent. I had to get inside of the jenkins container and get the java path. To get inside the container execute `docker exec -it <CONTAINER_NAME> bash`, and inside of the container execute `whereis java`. Copy the path and edit `JavaPath` from Step 9. To close the container shell type `exit`.
+> I came across an Error `Agent JVM has terminated. Exit code=127 docker` while trying to run the agent. I had to get inside of the jenkins container and get the java path. To get inside the container execute `docker exec -it <CONTAINER_NAME> bash`, and inside of the container execute `whereis java`. Copy the path and edit `JavaPath` from point 9. To close the container shell type `exit`.
 {: .prompt-tip }
 
 
 # Everything is now up and running!
 
-> It's highly advisable to **not** run any builds on the built-in node, instead using `agents` to run builds. To prevent builds from running on the built-in node directly, navigate to `Manage Jenkins` &rarr; `Manage Nodes and Clouds`. Select `Built-In Node` in the list, then select `Configure` in the menu. Set the `number of executors` to `0` and save.
-{: .prompt-tip }
+> It's highly advisable to **not** run any builds on the built-in node, instead using `agents` to run builds. To prevent builds from running on the built-in node directly, navigate to `Manage Jenkins` &rarr; `Manage Nodes and Clouds`. Select `Built-In Node` in the list, then select `Configure` in the menu. Set the `number of executors` to `0` and save. You can read more about it [`here`](https://www.jenkins.io/doc/book/security/controller-isolation/){:target="_blank"}
+{: .prompt-info }
 
 ## Reference:
 
