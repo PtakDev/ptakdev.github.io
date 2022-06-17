@@ -118,7 +118,13 @@ Aadding `{:target="_blank"}` after the link, opens it in new tab after cliking i
 > This is `danger`.
 {: .prompt-danger }
 
+## Arrows
 
+* Up arrow (&uarr;): `&uarr;`
+* Down arrow (&darr;): `&darr;`
+* Left arrow (&larr;): `&larr;`
+* Right arrow (&rarr;): `&rarr;`
+* Double headed arrow (&harr;): `&harr;`
 
 ## References
 [`Chirpy Demo`](https://chirpy.cotes.page/){:target="_blank"}
