@@ -30,7 +30,7 @@ services:
 > After running a Pontainer for the first time you will have to create a admin user. 
 {: .prompt-info }
 
-> To access your Portainer Server please use HTTPS protocol. Example: [`https://localhost:9443`](https:/localhost:9443){:target="_blank"}
+> To access your Portainer Server please use HTTPS protocol. Example: [`https://localhost:9443`](https://localhost:9443){:target="_blank"}
 {: .prompt-tip }
 
 
