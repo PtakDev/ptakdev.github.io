@@ -1,7 +1,7 @@
 ---
-title: Running Portainer with docker-compose
+title: Running Portainer in Docker with docker-compose
 date: 2022-06-21 18:20:00 +0100
-categories: [Docs, Portainer]
+categories: [Docker, Portainer]
 tags: [portainer, docker, docker-compose, ubuntu 20.04 ]     # TAG names should always be lowercase
 ---
 
@@ -11,7 +11,7 @@ tags: [portainer, docker, docker-compose, ubuntu 20.04 ]     # TAG names should 
 version: '3.3'
 services:
   portainer:
-    # You can change the tag `latest` to a specific version ex. `2.13.1`
+    # You can change the tag `latest` to a specific version e.g. `2.13.1`
     image: portainer/portainer-ce:latest
     container_name: portainer
     restart: unless-stopped

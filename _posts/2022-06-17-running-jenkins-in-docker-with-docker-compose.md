@@ -1,7 +1,7 @@
 ---
-title: Running Jenkins in Docker with Docker Compose
+title: Running Jenkins in Docker with docker-compose
 date: 2022-06-17 10:30:00 +0100
-categories: [Docs, Jenkins]
+categories: [Docker, Jenkins]
 tags: [jenkins, docker, docker-compose, ubuntu 20.04, ssh ]     # TAG names should always be lowercase
 ---
 
@@ -12,7 +12,7 @@ tags: [jenkins, docker, docker-compose, ubuntu 20.04, ssh ]     # TAG names shou
 {: .prompt-tip }
 
 
-## Create docker compose file
+## Create docker-compose file
 
 To retain all data even when the container is stopped, started, or deleted, we need to create an explicit volume for it. 
 
