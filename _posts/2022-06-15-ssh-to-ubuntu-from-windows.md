@@ -18,7 +18,7 @@ Now we need to copy public key from Linux to our Windows machine that we will be
 scp id_rsa.pub <UBUNTU_USER>@<IP_UBUNTU>:.ssh/authorized_keys
 ```
 
-> If it didn't work, you may have to create a id_rsa.pub file in C:\Users\<USER>\.ssh directory.
+> If it didn't work, you may have to create a id_rsa.pub file in C:\Users\<USER>\./ssh directory.
 {: .prompt-warning }
 
 
